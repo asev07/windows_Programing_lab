@@ -5,7 +5,7 @@ namespace ConsoleApp1 {
 	public class Session
 	{
 		
-		string dir = "session.txt";
+		string dir = "C:\\Users\\lulag\\source\\repos\\windows_Programing_lab\\text.txt";
 		
 
 
@@ -43,11 +43,9 @@ namespace ConsoleApp1 {
         }
 		public static void Main(string[] args)
 		{
-			
-				Session s = new Session();
-				s.recordSession("aser", "login");
-				s.displaySession();
-			
+			Session s = new Session();
+			s.recordSession("aser", "login");
+			s.displaySession();
 		}
 
 	}
