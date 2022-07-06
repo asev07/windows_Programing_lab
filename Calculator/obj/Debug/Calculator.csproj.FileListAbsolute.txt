@@ -9,3 +9,4 @@ C:\Users\lulag\source\repos\windows_Programing_lab\Calculator\obj\Debug\Calculat
 C:\Users\lulag\source\repos\windows_Programing_lab\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\lulag\source\repos\windows_Programing_lab\Calculator\obj\Debug\Calculator.exe
 C:\Users\lulag\source\repos\windows_Programing_lab\Calculator\obj\Debug\Calculator.pdb
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Calculator\obj\Debug\Calculator.Form2.resources

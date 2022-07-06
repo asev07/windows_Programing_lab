@@ -48,6 +48,10 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -193,7 +197,7 @@
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(119, 974);
+            this.button15.Location = new System.Drawing.Point(119, 960);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(126, 109);
             this.button15.TabIndex = 14;
@@ -251,11 +255,57 @@
             this.button19.Text = "sqrt";
             this.button19.UseVisualStyleBackColor = true;
             // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(1117, 511);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(284, 116);
+            this.button20.TabIndex = 21;
+            this.button20.Text = "Greet";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(1167, 309);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(422, 83);
+            this.textBox2.TabIndex = 22;
+            this.textBox2.Text = "Aser";
+            this.textBox2.WordWrap = false;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(892, 316);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(247, 76);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Name :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(1012, 791);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(389, 166);
+            this.button21.TabIndex = 24;
+            this.button21.Text = "Add inventory program";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 1164);
+            this.ClientSize = new System.Drawing.Size(1789, 1158);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
@@ -278,7 +328,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +356,10 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button21;
     }
 }
 

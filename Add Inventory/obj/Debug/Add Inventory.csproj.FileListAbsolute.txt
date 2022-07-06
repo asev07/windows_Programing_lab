@@ -1,0 +1,11 @@
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\bin\Debug\Add Inventory.exe.config
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\bin\Debug\Add Inventory.exe
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\bin\Debug\Add Inventory.pdb
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.csproj.AssemblyReference.cache
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.csproj.SuggestedBindingRedirects.cache
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add_Inventory.Form1.resources
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add_Inventory.Properties.Resources.resources
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.csproj.GenerateResource.cache
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.csproj.CoreCompileInputs.cache
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.exe
+C:\Users\lulag\Source\Repos\windows_Programing_lab\Add Inventory\obj\Debug\Add Inventory.pdb

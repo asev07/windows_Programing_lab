@@ -161,5 +161,30 @@ namespace Calculator
         {
             
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(textBox2.Text);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Form2 a = new Form2();
+        }
     }
 }
