@@ -31,7 +31,9 @@ namespace version_2_inventory_managment_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            //Application.Run(new SignIn());
+            Application.Run(new MDI());
         }
 
 

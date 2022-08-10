@@ -14,10 +14,11 @@ namespace version_2_inventory_managment_system
     public partial class Form1 : Form
     {
         static List<Product> products = new List<Product>();   
-       
+       SignIn signin ;
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,7 +33,6 @@ namespace version_2_inventory_managment_system
                 product.price= priceTextBox.Text;
                 product.count = countTextBox.Text;
                 product.itemName = nameTextBox.Text;
-                product.moniter = monitorTextBox.Text;
 
                 //finally adding the data to the list 
                 products.Add(product);
@@ -120,30 +120,7 @@ namespace version_2_inventory_managment_system
 
         }
 
-        private void monitorTextBox_Leave(object sender, EventArgs e)
-        {
-            Regex regex = new Regex("^[a-zA-Z]+$");
-
-            bool hasOnlyAlpha = false;
-            foreach (char i in monitorTextBox.Text)
-            {
-                hasOnlyAlpha = regex.IsMatch(char.ToString(i));
-                if (!hasOnlyAlpha)
-                {
-                    break;
-                }
-            }
-            if (!hasOnlyAlpha)
-            {
-                errorProvider4.SetError(monitorTextBox, "Id is Numbers only ");
-
-            }
-
-            else
-            {
-                errorProvider4.Clear();
-            }
-        }
+       
 
         private void nameTextBox_Leave(object sender, EventArgs e)
         {
@@ -218,6 +195,14 @@ namespace version_2_inventory_managment_system
             {
                 errorProvider1.Clear();
             }
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            SignIn signin = new SignIn();
+            signin.Show();
+            this.Hide();
+
         }
     }
 }
