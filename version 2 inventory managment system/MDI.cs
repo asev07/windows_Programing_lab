@@ -19,9 +19,22 @@ namespace version_2_inventory_managment_system
 
         private void newFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form active = this.ActiveMdiChild;
+            if (active == null) 
+            { 
             SignIn signIn = new SignIn();
-            signIn.MdiParent = this;    
+            signIn.MdiParent = this;
             signIn.Show();
+            }
+            else 
+            {
+                
+                active.Dispose();
+                SignIn signIn = new SignIn();
+                signIn.MdiParent = this;
+                signIn.Show();
+
+            }
            
         }
 
@@ -31,13 +44,90 @@ namespace version_2_inventory_managment_system
             Form active = this.ActiveMdiChild;
             if(active == null)
             {
-                Form1 form1 = new Form1();
+                AddInventory form1 = new AddInventory();
                 form1.MdiParent = this;
                 form1.Show();
+
+            }
+            else
+            {
+               
+                active.Dispose();
+                AddInventory form1 = new AddInventory();
+                form1.MdiParent = this;
+                form1.Show();
+
             }
 
 
-            
+
+        }
+
+        private void displayEmployeePageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+              Form active = this.ActiveMdiChild;
+            if(active == null)
+            {
+                DisplayEmployee form1 = new DisplayEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+            else
+            {
+               
+                active.Dispose();
+                DisplayEmployee form1 = new DisplayEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+
+        }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            if (active == null)
+            {
+                Display_Inventory form1 = new Display_Inventory();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+            else
+            {
+
+                active.Dispose();
+                Display_Inventory form1 = new Display_Inventory();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            if (active == null)
+            {
+                DisplayEmployee form1 = new DisplayEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+            else
+            {
+
+                active.Dispose();
+                DisplayEmployee form1 = new DisplayEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+
         }
     }
-}
+        }
+

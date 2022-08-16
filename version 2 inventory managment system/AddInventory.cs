@@ -11,11 +11,11 @@ using System.Text.RegularExpressions;
 
 namespace version_2_inventory_managment_system
 {
-    public partial class Form1 : Form
+    public partial class AddInventory : Form
     {
         static List<Product> products = new List<Product>();   
        SignIn signin ;
-        public Form1()
+        public AddInventory()
         {
             InitializeComponent();
            
@@ -41,6 +41,10 @@ namespace version_2_inventory_managment_system
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'inventoryDataSet.Employee' table. You can move, or remove it, as needed.
+            this.employeeTableAdapter.Fill(this.inventoryDataSet.Employee);
+            // TODO: This line of code loads data into the 'inventoryDataSet.inventory' table. You can move, or remove it, as needed.
+            this.inventoryTableAdapter.Fill(this.inventoryDataSet.inventory);
 
         }
 
@@ -202,6 +206,16 @@ namespace version_2_inventory_managment_system
             SignIn signin = new SignIn();
             signin.Show();
             this.Hide();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void idLabel1_Click(object sender, EventArgs e)
+        {
 
         }
     }

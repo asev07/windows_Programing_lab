@@ -29,12 +29,18 @@ namespace version_2_inventory_managment_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (passwordTextbox.Text == "12345" && usernameTxtbox.Text == "aser")
+            if (1<10 || passwordTextbox.Text == "12345" && usernameTxtbox.Text == "aser")
+           // if (passwordTextbox.Text == "12345" && usernameTxtbox.Text == "aser")
             {
-                Form1 form1 = new Form1();
+                MDI form1 = new MDI();
                 form1.Show();
                 this.Hide();
             }
+        }
+
+        private void usernameTxtbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,28 +30,25 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.typesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.version1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.version2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fullScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dockedViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addInventoryPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mainToolStripMenuItem,
-            this.typesToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.displayToolStripMenuItem,
+            this.recordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1709, 52);
+            this.menuStrip1.Size = new System.Drawing.Size(1709, 49);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,64 +58,51 @@
             this.newFileToolStripMenuItem,
             this.addInventoryPageToolStripMenuItem});
             this.mainToolStripMenuItem.Name = "mainToolStripMenuItem";
-            this.mainToolStripMenuItem.Size = new System.Drawing.Size(107, 48);
+            this.mainToolStripMenuItem.Size = new System.Drawing.Size(107, 45);
             this.mainToolStripMenuItem.Text = "main";
-            // 
-            // typesToolStripMenuItem
-            // 
-            this.typesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.version1ToolStripMenuItem,
-            this.version2ToolStripMenuItem});
-            this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(114, 45);
-            this.typesToolStripMenuItem.Text = "types";
-            // 
-            // version1ToolStripMenuItem
-            // 
-            this.version1ToolStripMenuItem.Name = "version1ToolStripMenuItem";
-            this.version1ToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
-            this.version1ToolStripMenuItem.Text = "version 1";
-            // 
-            // version2ToolStripMenuItem
-            // 
-            this.version2ToolStripMenuItem.Name = "version2ToolStripMenuItem";
-            this.version2ToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
-            this.version2ToolStripMenuItem.Text = "version 2";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fullScreenToolStripMenuItem,
-            this.dockedViewToolStripMenuItem});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(101, 45);
-            this.viewToolStripMenuItem.Text = "view";
-            // 
-            // fullScreenToolStripMenuItem
-            // 
-            this.fullScreenToolStripMenuItem.Name = "fullScreenToolStripMenuItem";
-            this.fullScreenToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
-            this.fullScreenToolStripMenuItem.Text = "full screen";
-            // 
-            // dockedViewToolStripMenuItem
-            // 
-            this.dockedViewToolStripMenuItem.Name = "dockedViewToolStripMenuItem";
-            this.dockedViewToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
-            this.dockedViewToolStripMenuItem.Text = "docked view";
             // 
             // newFileToolStripMenuItem
             // 
             this.newFileToolStripMenuItem.Name = "newFileToolStripMenuItem";
-            this.newFileToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.newFileToolStripMenuItem.Size = new System.Drawing.Size(494, 54);
             this.newFileToolStripMenuItem.Text = "sign in page";
             this.newFileToolStripMenuItem.Click += new System.EventHandler(this.newFileToolStripMenuItem_Click);
             // 
             // addInventoryPageToolStripMenuItem
             // 
             this.addInventoryPageToolStripMenuItem.Name = "addInventoryPageToolStripMenuItem";
-            this.addInventoryPageToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.addInventoryPageToolStripMenuItem.Size = new System.Drawing.Size(494, 54);
             this.addInventoryPageToolStripMenuItem.Text = "add inventory page";
             this.addInventoryPageToolStripMenuItem.Click += new System.EventHandler(this.addInventoryPageToolStripMenuItem_Click);
+            // 
+            // displayToolStripMenuItem
+            // 
+            this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inventoryToolStripMenuItem,
+            this.employeeToolStripMenuItem});
+            this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(138, 48);
+            this.displayToolStripMenuItem.Text = "Display";
+            // 
+            // recordToolStripMenuItem
+            // 
+            this.recordToolStripMenuItem.Name = "recordToolStripMenuItem";
+            this.recordToolStripMenuItem.Size = new System.Drawing.Size(135, 45);
+            this.recordToolStripMenuItem.Text = "Record";
+            // 
+            // inventoryToolStripMenuItem
+            // 
+            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.inventoryToolStripMenuItem.Text = "Inventory";
+            this.inventoryToolStripMenuItem.Click += new System.EventHandler(this.inventoryToolStripMenuItem_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
             // MDI
             // 
@@ -143,12 +127,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mainToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newFileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem typesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem version1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem version2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fullScreenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dockedViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addInventoryPageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
     }
 }

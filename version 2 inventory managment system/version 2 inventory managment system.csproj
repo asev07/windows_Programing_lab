@@ -46,11 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddInventory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddInventory.Designer.cs">
+      <DependentUpon>AddInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayEmployee.Designer.cs">
+      <DependentUpon>DisplayEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display_Inventory.Designer.cs">
+      <DependentUpon>Display_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventoryDataSet.cs">
+      <DependentUpon>inventoryDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="inventoryDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -71,8 +86,14 @@
     <Compile Include="SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AddInventory.resx">
+      <DependentUpon>AddInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayEmployee.resx">
+      <DependentUpon>DisplayEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_Inventory.resx">
+      <DependentUpon>Display_Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>

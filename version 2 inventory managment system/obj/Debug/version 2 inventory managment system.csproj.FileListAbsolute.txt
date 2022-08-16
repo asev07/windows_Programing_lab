@@ -14,11 +14,13 @@ C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory manag
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\bin\Debug\version 2 inventory managment system.pdb
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.csproj.AssemblyReference.cache
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.csproj.SuggestedBindingRedirects.cache
-C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.Form1.resources
+C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.AddInventory.resources
+C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.DisplayEmployee.resources
+C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.MDI.resources
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.Properties.Resources.resources
+C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.SignIn.resources
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.csproj.GenerateResource.cache
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.csproj.CoreCompileInputs.cache
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.exe
 C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version 2 inventory managment system.pdb
-C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.SignIn.resources
-C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.MDI.resources
+C:\Users\lulag\Documents\GitHub\windows_Programing_lab\version 2 inventory managment system\obj\Debug\version_2_inventory_managment_system.Display_Inventory.resources
