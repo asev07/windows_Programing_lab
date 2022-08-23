@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace version_2_inventory_managment_system
 {
-    public partial class DisplayEmployee : Form
+    public partial class Search : Form
     {
-        public DisplayEmployee()
+        public Search()
         {
             InitializeComponent();
         }

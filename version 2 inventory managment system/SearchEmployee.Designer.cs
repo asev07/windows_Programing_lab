@@ -1,6 +1,6 @@
 ﻿namespace version_2_inventory_managment_system
 {
-    partial class Display_Inventory
+    partial class SearchEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Display_Inventory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchEmployee));
             this.inventoryDataSet = new version_2_inventory_managment_system.inventoryDataSet();
             this.inventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventoryTableAdapter = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.inventoryTableAdapter();
             this.tableAdapterManager = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.TableAdapterManager();
-            this.employeeTableAdapter = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.EmployeeTableAdapter();
             this.inventoryBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -48,21 +47,15 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.inventoryBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.inventoryDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.searchInventoryToolStrip = new System.Windows.Forms.ToolStrip();
+            this.parameterToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.parameterToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.searchInventoryToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingNavigator)).BeginInit();
             this.inventoryBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventoryDataGridView)).BeginInit();
+            this.searchInventoryToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // inventoryDataSet
@@ -82,13 +75,9 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EmployeeTableAdapter = this.employeeTableAdapter;
+            this.tableAdapterManager.EmployeeTableAdapter = null;
             this.tableAdapterManager.inventoryTableAdapter = this.inventoryTableAdapter;
             this.tableAdapterManager.UpdateOrder = version_2_inventory_managment_system.inventoryDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
             // 
             // inventoryBindingNavigator
             // 
@@ -117,8 +106,8 @@
             this.inventoryBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.inventoryBindingNavigator.Name = "inventoryBindingNavigator";
             this.inventoryBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.inventoryBindingNavigator.Size = new System.Drawing.Size(1626, 51);
-            this.inventoryBindingNavigator.TabIndex = 0;
+            this.inventoryBindingNavigator.Size = new System.Drawing.Size(1699, 51);
+            this.inventoryBindingNavigator.TabIndex = 2;
             this.inventoryBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
@@ -216,116 +205,63 @@
             this.inventoryBindingNavigatorSaveItem.Text = "Save Data";
             this.inventoryBindingNavigatorSaveItem.Click += new System.EventHandler(this.inventoryBindingNavigatorSaveItem_Click);
             // 
-            // employeeBindingSource
+            // searchInventoryToolStrip
             // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.inventoryDataSet;
+            this.searchInventoryToolStrip.ImageScalingSize = new System.Drawing.Size(40, 40);
+            this.searchInventoryToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.parameterToolStripLabel,
+            this.parameterToolStripTextBox,
+            this.searchInventoryToolStripButton});
+            this.searchInventoryToolStrip.Location = new System.Drawing.Point(0, 51);
+            this.searchInventoryToolStrip.Name = "searchInventoryToolStrip";
+            this.searchInventoryToolStrip.Size = new System.Drawing.Size(1699, 52);
+            this.searchInventoryToolStrip.TabIndex = 5;
+            this.searchInventoryToolStrip.Text = "searchInventoryToolStrip";
             // 
-            // label1
+            // parameterToolStripLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 63);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Inventory List";
+            this.parameterToolStripLabel.Name = "parameterToolStripLabel";
+            this.parameterToolStripLabel.Size = new System.Drawing.Size(161, 45);
+            this.parameterToolStripLabel.Text = "parameter:";
             // 
-            // inventoryDataGridView
+            // parameterToolStripTextBox
             // 
-            this.inventoryDataGridView.AutoGenerateColumns = false;
-            this.inventoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inventoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.inventoryDataGridView.DataSource = this.inventoryBindingSource;
-            this.inventoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryDataGridView.Location = new System.Drawing.Point(0, 51);
-            this.inventoryDataGridView.Name = "inventoryDataGridView";
-            this.inventoryDataGridView.RowHeadersWidth = 102;
-            this.inventoryDataGridView.RowTemplate.Height = 40;
-            this.inventoryDataGridView.Size = new System.Drawing.Size(1626, 1213);
-            this.inventoryDataGridView.TabIndex = 2;
+            this.parameterToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.parameterToolStripTextBox.Name = "parameterToolStripTextBox";
+            this.parameterToolStripTextBox.Size = new System.Drawing.Size(100, 52);
+            this.parameterToolStripTextBox.Click += new System.EventHandler(this.parameterToolStripTextBox_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // searchInventoryToolStripButton
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 250;
+            this.searchInventoryToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.searchInventoryToolStripButton.Name = "searchInventoryToolStripButton";
+            this.searchInventoryToolStripButton.Size = new System.Drawing.Size(232, 45);
+            this.searchInventoryToolStripButton.Text = "searchInventory";
+            this.searchInventoryToolStripButton.Click += new System.EventHandler(this.searchInventoryToolStripButton_Click);
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "employee";
-            this.dataGridViewTextBoxColumn2.HeaderText = "employee";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ItemName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ItemName";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "dateofregistraton";
-            this.dataGridViewTextBoxColumn4.HeaderText = "dateofregistraton";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "itemcount";
-            this.dataGridViewTextBoxColumn5.HeaderText = "itemcount";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn6.HeaderText = "price";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 12;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 250;
-            // 
-            // Display_Inventory
+            // SearchEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1626, 1264);
-            this.Controls.Add(this.inventoryDataGridView);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1699, 1084);
+            this.Controls.Add(this.searchInventoryToolStrip);
             this.Controls.Add(this.inventoryBindingNavigator);
-            this.Name = "Display_Inventory";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Display_Inventory";
-            this.Load += new System.EventHandler(this.Display_Inventory_Load);
+            this.Name = "SearchEmployee";
+            this.Text = "SearchEmployee";
+            this.Load += new System.EventHandler(this.SearchEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.inventoryDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingNavigator)).EndInit();
             this.inventoryBindingNavigator.ResumeLayout(false);
             this.inventoryBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventoryDataGridView)).EndInit();
+            this.searchInventoryToolStrip.ResumeLayout(false);
+            this.searchInventoryToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
         private inventoryDataSet inventoryDataSet;
         private System.Windows.Forms.BindingSource inventoryBindingSource;
         private inventoryDataSetTableAdapters.inventoryTableAdapter inventoryTableAdapter;
@@ -343,15 +279,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton inventoryBindingNavigatorSaveItem;
-        private inventoryDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
-        private System.Windows.Forms.BindingSource employeeBindingSource;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView inventoryDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.ToolStrip searchInventoryToolStrip;
+        private System.Windows.Forms.ToolStripLabel parameterToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox parameterToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton searchInventoryToolStripButton;
     }
 }

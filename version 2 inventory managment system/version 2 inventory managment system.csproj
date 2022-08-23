@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,11 +53,29 @@
     <Compile Include="AddInventory.Designer.cs">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayEmployee.cs">
+    <Compile Include="flowlayout assignment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DisplayEmployee.Designer.cs">
-      <DependentUpon>DisplayEmployee.cs</DependentUpon>
+    <Compile Include="flowlayout assignment.Designer.cs">
+      <DependentUpon>flowlayout assignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Name.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Name.Designer.cs">
+      <DependentUpon>Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTrail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlTrail.Designer.cs">
+      <DependentUpon>UserControlTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
     </Compile>
     <Compile Include="Display_Inventory.cs">
       <SubType>Form</SubType>
@@ -80,17 +99,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchEmployee.Designer.cs">
+      <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductCard.Designer.cs">
+      <DependentUpon>ProductCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddInventory.resx">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayEmployee.resx">
-      <DependentUpon>DisplayEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="flowlayout assignment.resx">
+      <DependentUpon>flowlayout assignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Name.resx">
+      <DependentUpon>Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTrail.resx">
+      <DependentUpon>UserControlTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display_Inventory.resx">
       <DependentUpon>Display_Inventory.cs</DependentUpon>
@@ -107,8 +147,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchEmployee.resx">
+      <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCard.resx">
+      <DependentUpon>ProductCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="inventoryDataSet.xsc">
       <DependentUpon>inventoryDataSet.xsd</DependentUpon>

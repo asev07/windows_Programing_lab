@@ -20,29 +20,29 @@ namespace version_2_inventory_managment_system
         private void newFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form active = this.ActiveMdiChild;
-            if (active == null) 
-            { 
-            SignIn signIn = new SignIn();
-            signIn.MdiParent = this;
-            signIn.Show();
-            }
-            else 
+            if (active == null)
             {
-                
+                SignIn signIn = new SignIn();
+                signIn.MdiParent = this;
+                signIn.Show();
+            }
+            else
+            {
+
                 active.Dispose();
                 SignIn signIn = new SignIn();
                 signIn.MdiParent = this;
                 signIn.Show();
 
             }
-           
+
         }
 
         private void addInventoryPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
             Form active = this.ActiveMdiChild;
-            if(active == null)
+            if (active == null)
             {
                 AddInventory form1 = new AddInventory();
                 form1.MdiParent = this;
@@ -51,7 +51,7 @@ namespace version_2_inventory_managment_system
             }
             else
             {
-               
+
                 active.Dispose();
                 AddInventory form1 = new AddInventory();
                 form1.MdiParent = this;
@@ -65,19 +65,19 @@ namespace version_2_inventory_managment_system
 
         private void displayEmployeePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-              Form active = this.ActiveMdiChild;
-            if(active == null)
+            Form active = this.ActiveMdiChild;
+            if (active == null)
             {
-                DisplayEmployee form1 = new DisplayEmployee();
+                Search form1 = new Search();
                 form1.MdiParent = this;
                 form1.Show();
 
             }
             else
             {
-               
+
                 active.Dispose();
-                DisplayEmployee form1 = new DisplayEmployee();
+                Search form1 = new Search();
                 form1.MdiParent = this;
                 form1.Show();
 
@@ -112,7 +112,7 @@ namespace version_2_inventory_managment_system
             Form active = this.ActiveMdiChild;
             if (active == null)
             {
-                DisplayEmployee form1 = new DisplayEmployee();
+                Search form1 = new Search();
                 form1.MdiParent = this;
                 form1.Show();
 
@@ -121,12 +121,55 @@ namespace version_2_inventory_managment_system
             {
 
                 active.Dispose();
-                DisplayEmployee form1 = new DisplayEmployee();
+                Search form1 = new Search();
                 form1.MdiParent = this;
                 form1.Show();
 
             }
 
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            if (active == null)
+            {
+                SearchEmployee form1 = new SearchEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+            else
+            {
+
+                active.Dispose();
+                SearchEmployee form1 = new SearchEmployee();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+        }
+
+        private void userControlTrailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            if (active == null)
+            {
+                UserControlTrail form1 = new UserControlTrail();
+                form1.MdiParent = this;
+                form1.Show();
+
+            }
+            else
+            {
+
+                active.Dispose();
+                UserControlTrail form1 = new UserControlTrail();
+                form1.MdiParent = this;
+                form1.Show();
+
+
+            }
         }
     }
         }
