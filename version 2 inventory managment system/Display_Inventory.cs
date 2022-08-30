@@ -33,5 +33,10 @@ namespace version_2_inventory_managment_system
             this.inventoryTableAdapter.Fill(this.inventoryDataSet.inventory);
 
         }
+        
+        private void inventoryDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

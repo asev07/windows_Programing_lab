@@ -88,6 +88,7 @@
             this.priceLbl.Size = new System.Drawing.Size(387, 54);
             this.priceLbl.TabIndex = 4;
             this.priceLbl.Text = "______________";
+            this.priceLbl.Click += new System.EventHandler(this.priceLbl_Click);
             // 
             // descLbl
             // 
@@ -114,6 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.descLbl);
             this.Controls.Add(this.priceLbl);
@@ -122,7 +124,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tittleLbl);
             this.Name = "ProductCard";
-            this.Size = new System.Drawing.Size(988, 743);
+            this.Size = new System.Drawing.Size(988, 508);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

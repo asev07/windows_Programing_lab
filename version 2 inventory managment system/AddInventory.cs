@@ -27,12 +27,7 @@ namespace version_2_inventory_managment_system
                 //creating the product object
                 Product product = new Product();
 
-                //coping the data to the new product object
-                product.idNumber = numberTextBox.Text;
-                product.date = dateTextBox.Text;
-                product.price= priceTextBox.Text;
-                product.count = countTextBox.Text;
-                product.itemName = nameTextBox.Text;
+           
 
                 //finally adding the data to the list 
                 products.Add(product);
@@ -50,11 +45,15 @@ namespace version_2_inventory_managment_system
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
+            Product product = new Product();   
+            product.price = float.Parse(priceTextBox.Text);
+            product.moniter = 2;
+            product.count = int.Parse(countTextBox.Text);
+            product.date = (DateTime.Now.ToString() );
+            product.itemName = nameTextBox.Text;
             // the save button saves the static list of products either to file or database
-            foreach (Product product in products)
-            {
-                product.display();
-            }
+            inventory inv = new inventory();
+            inv.addProduct(product);
         }
 
         private void numberTextBox_Leave(object sender, EventArgs e)
@@ -215,6 +214,11 @@ namespace version_2_inventory_managment_system
         }
 
         private void idLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

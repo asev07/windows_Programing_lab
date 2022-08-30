@@ -250,6 +250,7 @@
             this.inventoryDataGridView.RowTemplate.Height = 40;
             this.inventoryDataGridView.Size = new System.Drawing.Size(1626, 1213);
             this.inventoryDataGridView.TabIndex = 2;
+            this.inventoryDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inventoryDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 

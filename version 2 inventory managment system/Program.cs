@@ -3,21 +3,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace version_2_inventory_managment_system
 {
     internal class Product 
     {
-       public string idNumber { get; set; }  
+       public int idNumber { get; set; }  
        public string date { get; set; }  
-       public string moniter { get; set; }  
+       public int moniter { get; set; }  
        public string itemName { get; set; }  
-       public string count { get; set; }  
-       public string price { get; set; }  
+       public int count { get; set; }  
+       public float price { get; set; }  
 
         public  void display()
         {
             Console.WriteLine(" ${idNumber}  -   ${date}  -   ${monitor}   -   ${itemName}  -   ${count}   -    ${price}");
+        }
+    }
+    internal class inventory { 
+     
+
+        public void addProduct(Product product)
+        {
+            string statement = $"insert into inventory(employee,itemName,dateofregistration,itemcount,price) values({product.moniter},{product.itemName},{product.date},{product.count},{product.price})";
+            String connectionString = @"Data Source = DESKTOP-LPP4R31\SQLEXPRESS;Initial Catalog=inventory;Integrated Security=True";
+            SqlConnection connection = null;
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlCommand command = new SqlCommand(connectionString,connection);
+                MessageBox.Show("Connected");
+                command.ExecuteNonQuery();
+
+                connection.Close();
+            }
+            catch
+            {
+                if (connection != null)
+                    connection.Close();
+                MessageBox.Show("Not Connected");
+
+            }
+
         }
     }
 
@@ -33,8 +63,11 @@ namespace version_2_inventory_managment_system
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Application.Run(new SignIn());
-            //Application.Run(new MDI());
-            Application.Run(new flowlayout_assignment());
+            Application.Run(new MDI());
+            //Application.Run(new flowlayout_assignment());
+            //Application.Run(new UserControlTrail());
+
+
 
         }
 

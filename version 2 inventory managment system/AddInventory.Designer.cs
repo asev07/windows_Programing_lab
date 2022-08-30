@@ -33,14 +33,10 @@
             this.saveBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
-            this.numberLbl = new System.Windows.Forms.Label();
-            this.dateLbl = new System.Windows.Forms.Label();
             this.monitorLbl = new System.Windows.Forms.Label();
             this.itemNameLbl = new System.Windows.Forms.Label();
             this.CountLbl = new System.Windows.Forms.Label();
             this.priceLbl = new System.Windows.Forms.Label();
-            this.numberTextBox = new System.Windows.Forms.TextBox();
-            this.dateTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.countTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
@@ -58,8 +54,13 @@
             this.inventoryTableAdapter = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.inventoryTableAdapter();
             this.tableAdapterManager = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.TableAdapterManager();
             this.employeeTableAdapter = new version_2_inventory_managment_system.inventoryDataSetTableAdapters.EmployeeTableAdapter();
-            this.idLabel1 = new System.Windows.Forms.Label();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idLabel1 = new System.Windows.Forms.Label();
+            this.numberLbl = new System.Windows.Forms.Label();
+            this.numberTextBox = new System.Windows.Forms.TextBox();
+            this.dateTextBox = new System.Windows.Forms.TextBox();
+            this.dateLbl = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -73,19 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.Location = new System.Drawing.Point(93, 157);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(72, 54);
-            idLabel.TabIndex = 18;
-            idLabel.Text = "id:";
-            // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(219, 942);
+            this.saveBtn.Location = new System.Drawing.Point(515, 703);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(229, 93);
@@ -96,7 +87,7 @@
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(619, 942);
+            this.addBtn.Location = new System.Drawing.Point(915, 703);
             this.addBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(229, 93);
@@ -107,33 +98,13 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(1045, 942);
+            this.cancelBtn.Location = new System.Drawing.Point(1341, 703);
             this.cancelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(229, 93);
             this.cancelBtn.TabIndex = 2;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
-            // 
-            // numberLbl
-            // 
-            this.numberLbl.AutoSize = true;
-            this.numberLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberLbl.Location = new System.Drawing.Point(83, 236);
-            this.numberLbl.Name = "numberLbl";
-            this.numberLbl.Size = new System.Drawing.Size(161, 46);
-            this.numberLbl.TabIndex = 3;
-            this.numberLbl.Text = "Number";
-            // 
-            // dateLbl
-            // 
-            this.dateLbl.AutoSize = true;
-            this.dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLbl.Location = new System.Drawing.Point(523, 236);
-            this.dateLbl.Name = "dateLbl";
-            this.dateLbl.Size = new System.Drawing.Size(104, 46);
-            this.dateLbl.TabIndex = 4;
-            this.dateLbl.Text = "Date";
             // 
             // monitorLbl
             // 
@@ -174,27 +145,6 @@
             this.priceLbl.Size = new System.Drawing.Size(112, 46);
             this.priceLbl.TabIndex = 8;
             this.priceLbl.Text = "Price";
-            // 
-            // numberTextBox
-            // 
-            this.numberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberTextBox.Location = new System.Drawing.Point(91, 298);
-            this.numberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numberTextBox.Name = "numberTextBox";
-            this.numberTextBox.Size = new System.Drawing.Size(303, 64);
-            this.numberTextBox.TabIndex = 9;
-            this.numberTextBox.Leave += new System.EventHandler(this.numberTextBox_Leave);
-            // 
-            // dateTextBox
-            // 
-            this.dateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTextBox.Location = new System.Drawing.Point(533, 298);
-            this.dateTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(303, 64);
-            this.dateTextBox.TabIndex = 10;
-            this.dateTextBox.TextChanged += new System.EventHandler(this.dateTextBox_TextChanged);
-            this.dateTextBox.Leave += new System.EventHandler(this.dateTextBox_Leave);
             // 
             // nameTextBox
             // 
@@ -301,6 +251,11 @@
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.inventoryDataSet;
+            // 
             // idLabel1
             // 
             this.idLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.inventoryBindingSource, "id", true));
@@ -312,19 +267,77 @@
             this.idLabel1.Text = "label2";
             this.idLabel1.Click += new System.EventHandler(this.idLabel1_Click);
             // 
-            // employeeBindingSource
+            // idLabel
             // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.inventoryDataSet;
+            idLabel.AutoSize = true;
+            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(93, 157);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(72, 54);
+            idLabel.TabIndex = 18;
+            idLabel.Text = "id:";
+            // 
+            // numberLbl
+            // 
+            this.numberLbl.AutoSize = true;
+            this.numberLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberLbl.Location = new System.Drawing.Point(83, 236);
+            this.numberLbl.Name = "numberLbl";
+            this.numberLbl.Size = new System.Drawing.Size(161, 46);
+            this.numberLbl.TabIndex = 3;
+            this.numberLbl.Text = "Number";
+            // 
+            // numberTextBox
+            // 
+            this.numberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberTextBox.Location = new System.Drawing.Point(91, 298);
+            this.numberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numberTextBox.Name = "numberTextBox";
+            this.numberTextBox.Size = new System.Drawing.Size(303, 64);
+            this.numberTextBox.TabIndex = 9;
+            this.numberTextBox.Leave += new System.EventHandler(this.numberTextBox_Leave);
+            // 
+            // dateTextBox
+            // 
+            this.dateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTextBox.Location = new System.Drawing.Point(533, 298);
+            this.dateTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTextBox.Name = "dateTextBox";
+            this.dateTextBox.Size = new System.Drawing.Size(303, 64);
+            this.dateTextBox.TabIndex = 10;
+            this.dateTextBox.TextChanged += new System.EventHandler(this.dateTextBox_TextChanged);
+            this.dateTextBox.Leave += new System.EventHandler(this.dateTextBox_Leave);
+            // 
+            // dateLbl
+            // 
+            this.dateLbl.AutoSize = true;
+            this.dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLbl.Location = new System.Drawing.Point(523, 236);
+            this.dateLbl.Name = "dateLbl";
+            this.dateLbl.Size = new System.Drawing.Size(104, 46);
+            this.dateLbl.TabIndex = 4;
+            this.dateLbl.Text = "Date";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1137, 378);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "           ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1933, 1562);
+            this.Controls.Add(this.logoutBtn);
+            this.Controls.Add(this.label2);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idLabel1);
-            this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.countTextBox);
@@ -368,14 +381,10 @@
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.Label numberLbl;
-        private System.Windows.Forms.Label dateLbl;
         private System.Windows.Forms.Label monitorLbl;
         private System.Windows.Forms.Label itemNameLbl;
         private System.Windows.Forms.Label CountLbl;
         private System.Windows.Forms.Label priceLbl;
-        private System.Windows.Forms.TextBox numberTextBox;
-        private System.Windows.Forms.TextBox dateTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox countTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
@@ -392,9 +401,14 @@
         private System.Windows.Forms.BindingSource inventoryBindingSource;
         private inventoryDataSetTableAdapters.inventoryTableAdapter inventoryTableAdapter;
         private inventoryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.Label idLabel1;
         private inventoryDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.BindingSource employeeBindingSource;
+        private System.Windows.Forms.Label idLabel1;
+        private System.Windows.Forms.TextBox dateTextBox;
+        private System.Windows.Forms.TextBox numberTextBox;
+        private System.Windows.Forms.Label dateLbl;
+        private System.Windows.Forms.Label numberLbl;
+        private System.Windows.Forms.Label label2;
     }
 }
 
